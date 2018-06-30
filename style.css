@@ -1,9 +1,64 @@
 html,body{
-  min-width:290px;
-   /* color: #4d4e53;*/
    color:black;
     /*background-color: #ffffff;*/
     background-color: #dadada;
     font-family: 'Open Sans',Arial,sans-serif;
     line-height: 1.5;
+    font-size: 18px;
 }
+
+.nav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    background: #778899;
+    overflow-x: hidden;
+    padding:7px;
+  }
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.nav a:hover {
+    color: orange;
+}
+
+#main-doc {
+    margin-left: 200px; /* Same width as the sidebar + left position in px */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding-left: 50px;
+    padding-right: 100px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header{
+  font-weight: bold;
+  color:orange;
+}
+
+.code{
+  background-color: white;
+  padding: 5px;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+   code{
+    margin-left:-20px;
+    width:100%;
+    padding:15px;
+    padding-left:10px;
+    padding-right:45px;
+    min-width:233px;    
+}
+

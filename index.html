@@ -3,8 +3,21 @@
 <head>
   <title>HTML basics</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>   
 </head>
 <body>
+  <div class="nav">
+   <nav id="nav-bar">
+    <header>HTML Basics</header>
+     <ul>   
+        <a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+        <a class="nav-link" href="#Code_Editor"><li>Code Editor</li></a>
+        <a class="nav-link" href="#Hello_World"><li>Hello World</li></a>
+        <a class="nav-link" href="#Open_Browser"><li>Open Browser</li></a>
+        <a class="nav-link" href="#Add_CSS"><li>Add CSS</li></a>
+     </ul> 
+    </nav>
+   </div>
   <main id="main-doc">
     <section class="main-section" id="Introduction">
       <header>Introduction</header>     
@@ -14,48 +27,83 @@
        </article>
       </section>
 
-    <section class="main-section" id="Code_editor">
-      <header>Code editor</header> 
+    <section class="main-section" id="Code_Editor">
+      <header>Code Editor</header> 
       <article>
          <p>To write code you are going to need some type of code editor, for example Notepad ++, Atom, Sublime Text or Brackets. Do your research and decide which want suits you and then install it.</p>
          <p>My personal favourite is Sublime Text.</p>
       </article>
     </section>
 
-    <section class="main-section" id="Hello World">
-      <header>HelloWorld</header> 
+    <section class="main-section" id="Hello_World">
+      <header>Hello World</header> 
         <article>
          <p>Now let's get cracking with writing our first code!</p>
-         <p>Open your code editor, copy this boilerplate code:
-            
-         </p>
-         <code>
+         <p>Open your code editor, copy this boilerplate code:</p> 
+          <div class="code">   
+           <code>
+             &emsp;&#60;!DOCTYPE html&#62;
+             <br>&emsp;&emsp;&#60;html lang="en"&#62;
+             <br>&emsp;&emsp;&emsp;&#60;head&#62;
+             <br>&emsp;&emsp;&emsp;&emsp;&#60;title&#62;
+             <br>&emsp;&emsp;&emsp;&emsp;&#60;/title&#62;
+             <br>&emsp;&emsp;&emsp;&#60;/head&#62;
+             <br>&emsp;&emsp;&emsp;&#60;body&#62;
+             <br>&emsp;&emsp;&emsp;&#60;/body&#62;
+             <br>&emsp;&emsp;&#60;/html&#62;
+           </code>
+          </div> 
 
+          <p>Between the two body tags, write warp "Hello world" in h1 tags like this:</p>
+          <div class="code"> 
+             <code>           
+               &emsp;&emsp;&#60;H1&#62;
+               Hello World!&emsp;&#60;/H1&#62;
+             </code>
+           </div>
+           <p>Other headings, in descending degrees of importance are written as:
+            <ul>
+              <li>h2</li>
+              <li>h3</li>
+              <li>h4</li>
+              <li>h5</li>
+              <li>h6</li>
+             </ul>
+           </p>
           
-
-         </code>
-         <code></code>
-         <code></code>
         </article>      
     </section>
 
-    <section class="main-section" id="Sonnet_2">
-      <header>Sonnet 2</header> 
+    <section class="main-section" id="Open_Browser">
+      <header>Open Browser</header> 
         <article>
-          <p></p>
-          <p></p>
-           <code></code>
-         <code></code>
-         
+          <p>Check the code that you have written by saving your file as index.html</p>
+          <p>Navigate to this file where you have saved it and double-click onit. You will see that a new tab in the browser opend up with an empty white page with the words "Hello World!".</p>        
+          
         </article>     
     </section>
 
-    <section class="main-section" id="Sonnet_3">
-      <header>Sonnet 3</header>
+    <section class="main-section" id="Add_CSS">
+      <header>Add CSS</header>
         <article>
-          <p></p>
-          <p></p>
-         
+          <p>Let's change the colour of "Hello world" by creating as css file. In the same folder as the index.html create this file:</p>
+          <div class="code"> 
+             <code>&emsp;style.css</code>                 
+         </div>
+         <p>Make sure that your index.html file knows about the css file by adding this link in the head part of the index.html file:
+         </p>
+         <div class="code"> 
+             <code> &emsp;&emsp;&#60;link rel="stylesheet" type="text/css" href="style.css"&#62;</code>                 
+         </div>
+         <p>Add the following code to your css file, refresh the page and see how the "Hello World!" message magically change color and font:
+         </p>
+         <div class="code"> 
+             <code> &emsp;h1{
+                    <br>&emsp;font-family:"Arial";
+                    <br>&emsp;color:red;
+                    <br>&emsp;}
+            </code>                 
+         </div>
        </article>      
     </section>
 
